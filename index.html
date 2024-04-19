@@ -2,8 +2,8 @@
  * @Author: Gao Chaohui
  * @Date: 2024-04-02 11:26:15
  * @LastEditors: Gao Chaohui
- * @LastEditTime: 2024-04-19 14:15:57
- * @FilePath: /test/index.html
+ * @LastEditTime: 2024-04-19 15:10:17
+ * @FilePath: /test/Users/gao/Desktop/柱状图下钻.html
  * Copyright (c) 2024 by 北京春天医药科技发展有限公司, All Rights Reserved. 
 -->
 <!DOCTYPE html>
@@ -16,16 +16,23 @@
   <script src="
     https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js
     "></script>
+    <style>
+      body{
+        background-color: #00000000;
+
+      }
+
+    </style>
 </head>
 
 <body>
   <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
-  <div id="main" style="width: 500px;height:255px;"></div>
+  <div id="main" style="width: 500px;height:200px;"></div>
   <script type="text/javascript">
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('main'));
 
-    let bgColor = '#fff', fontColor = '#666';
+    let bgColor = '#00000000', fontColor = '#666';
     let Data = [
       { name: 'A矿业公司', value: 300 },
       { name: 'B矿业公司', value: 400 },
@@ -58,7 +65,7 @@
         grid: {
           top: '14%',
           right: '3%',
-          left: '5%',
+          left: '8%',
           bottom: '14%'
         },
         xAxis: [{
